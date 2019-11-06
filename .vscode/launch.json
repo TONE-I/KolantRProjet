@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "Debug J-Link",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/BUILD/NUCLEO_F746ZG/GCC_ARM-DEBUG/${workspaceRootFolderName}.elf",
+            "serverpath": "/opt/SEGGER/JLink/JLinkGDBServerCLExe", 
+            "servertype": "jlink",
+            "device": "STM32F746ZG",
+            "interface": "swd",
+            "runToMain": true,
+           // "gdbpath": "/usr/bin/gdb-multiarch", // POUR SNIR
+            "gdbpath": "/usr/local/bin/arm-none-eabi-gdb", //POUR SB
+            "svdFile": "${workspaceRoot}/STM32F7x6.svd",
+            "preLaunchTask": "mbed",
+        }
+    ]
+}
