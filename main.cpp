@@ -8,7 +8,7 @@
 #include "mbed.h"
 #include "ThisThread.h"
 #define SLEEP_TIME                  100ms // (msec)
-DigitalOut led1(PB_7);
+DigitalOut led1(LED1);
 int main()
 {
     while (true) {
