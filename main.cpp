@@ -5,10 +5,12 @@
  * @version 1.0
  * @date 21/10/2019
  */
+
 #include "mbed.h"
-#include "ThisThread.h"
-#define SLEEP_TIME                  100ms // (msec)
+
+#define SLEEP_TIME                  100 // (msec)
 DigitalOut led1(LED1);
+
 int main()
 {
     while (true) {
