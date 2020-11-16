@@ -1,4 +1,4 @@
-# Mise en oeuvre afficheut tft adafruit 320*240 
+# Mise en oeuvre afficheur tft adafruit 320*240 
 
 - controler tft :  [ILI9341 (TFT controller)](http://www.adafruit.com/datasheets/ILI9341.pdf)
 - controler touchscreen[STMPE610](http://www.adafruit.com/datasheets/STMPE610.pdf)
