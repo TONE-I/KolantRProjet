@@ -9,6 +9,9 @@
             "compilerPath": "arm-none-eabi-g++",
             "includePath": [
                 "${workspaceFolder}/*",
+                "${workspaceFolder}/SPI_STMPE610/*",
+                "${workspaceFolder}/SPI_TFT_ILI9341/*",
+                "${workspaceFolder}/TFT_fonts/*",
                 "${workspaceFolder}/mbed-os/*",
                 "${workspaceFolder}/mbed-os/cmsis/*",
                 "${workspaceFolder}/mbed-os/cmsis/TARGET_CORTEX_M/*",

@@ -6,5 +6,24 @@
   - https://os.mbed.com/users/Rhyme/code/TS_Eyes/
   - https://learn.adafruit.com/adafruit-2-8-tft-touch-shield-v2/
   - https://learn.adafruit.com/adafruit-2-8-tft-touch-shield-v2/downloads
+  - projet plus récent
+  - https://os.mbed.com/teams/GraphicsDisplay/code/UniGraphic/
 
-- http://moodle.lyceekastler.fr/mod/wiki/view.php?id=1022)
+- GraphicsDisplay / UniGraphic  http://moodle.lyceekastler.fr/mod/wiki/view.php?id=1022)
+
+Ajout des librairies 
+
+- Motoo Tanaka/ SPI_STMPE610 (mbed add http://os.mbed.com/users/Rhyme/code/SPI_STMPE610/)
+- Motoo Tanaka/ SPI_TFT_ILI9341(mbed add http://os.mbed.com/users/Rhyme/code/SPI_TFT_ILI9341/)
+- Motoo Tanaka/ TFT_fonts (mbed add http://os.mbed.com/users/dreschpe/code/TFT_fonts/)
+-  
+- GraphicsDisplay / UniGraphic (mbed add http://os.mbed.com/teams/GraphicsDisplay/code/UniGraphic/)
+
+Modification fichier c_cpp_properties.json
+
+                "${workspaceFolder}/SPI_STMPE610/*",
+                "${workspaceFolder}/SPI_TFT_ILI9341/*",
+                "${workspaceFolder}/TFT_fonts/*",
+                
+                "${workspaceFolder}/UniGraphic/**",
+modification des fichier de déclaration de fonts : modfication de __align(2) par MBED_ALIGN(2)
