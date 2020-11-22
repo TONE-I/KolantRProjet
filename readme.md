@@ -27,3 +27,23 @@ Modification fichier c_cpp_properties.json
                 
                 "${workspaceFolder}/UniGraphic/**",
 modification des fichier de déclaration de fonts : modfication de __align(2) par MBED_ALIGN(2)
+
+
+
+​    //modif Spe car pas de borche connecté pour le reset pas connecté
+
+void SPI_TFT_ILI9341::tft_reset() ...
+
+​    // if (_reset != NC)
+
+​    // {
+
+​    //     DigitalOut rst(_reset);
+
+​    //     rst = 0;                       // display reset
+
+​    //     wait_us(50);
+
+​    //     rst = 1;                       // end hardware reset
+
+​    // }
