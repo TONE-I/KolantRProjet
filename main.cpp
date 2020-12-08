@@ -8,7 +8,7 @@
 
 #include "mbed.h"
 
-#define SLEEP_TIME 100ms // (msec)
+#define SLEEP_TIME 200ms // (msec)
 DigitalOut led1(LED1);
 
 int main() {
@@ -16,7 +16,6 @@ int main() {
     printf("LO SNIR \r\n");
     led1 = !led1;
 
-    
     ThisThread::sleep_for(SLEEP_TIME);
   }
 }
