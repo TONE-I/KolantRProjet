@@ -15,6 +15,8 @@ int main() {
   while (true) {
     printf("LO SNIR \r\n");
     led1 = !led1;
+
+    
     ThisThread::sleep_for(SLEEP_TIME);
   }
 }
