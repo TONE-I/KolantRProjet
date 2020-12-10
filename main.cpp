@@ -7,15 +7,20 @@
  */
 
 #include "mbed.h"
-
-#define SLEEP_TIME 200ms // (msec)
+#include "ventilation.h"
 DigitalOut led1(LED1);
+DigitalIn button(USER_BUTTON);
 
 int main() {
   while (true) {
     printf("LO SNIR \r\n");
     led1 = !led1;
-
-    ThisThread::sleep_for(SLEEP_TIME);
+    if(button == 1){
+    OpenWin();
+    }
+    else{
+    CloseWin();
+    }
+    ThisThread::sleep_for(100ms); 
   }
 }
