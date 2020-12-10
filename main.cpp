@@ -7,6 +7,7 @@
  */
 
 #include "mbed.h"
+<<<<<<< HEAD
 #include "info.h"
 
 #define SLEEP_TIME 200ms // (msec)
@@ -27,5 +28,6 @@ int main() {
     ThisThread::sleep_for(120ms);
 }
 }    
-}
+
+
 
