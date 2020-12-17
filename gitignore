@@ -1,1 +1,2 @@
-./vson/launch.json
+./vscode/launch.json
+./main.cpp
