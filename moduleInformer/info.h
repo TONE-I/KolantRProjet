@@ -1,6 +1,6 @@
-#ifndef INFO.H
-#define INFO.H
-void afficherLCD(int test);
-void alerteLED_OFF();
+#ifndef INFO_H
+#define INFO_H
+void afficherLCD(float donnee,int etat);
+void alerteLED_reset();
 void alerteLED();
 #endif

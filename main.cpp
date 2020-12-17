@@ -7,27 +7,29 @@
  */
 
 #include "mbed.h"
-<<<<<<< HEAD
+
 #include "info.h"
 
 #define SLEEP_TIME 200ms // (msec)
-DigitalIn buton(D5);
+InterruptIn buton(D5);
 
 int main() {
-      
+   
+    int etat = 0; 
+    etat = buton;
   while (true)
   {
     int a = buton;
-    afficherLCD(a);
+    afficherLCD(a,etat);
     if (buton == 1)
     {
     alerteLED();
+    etat = 1;
      ThisThread::sleep_for(120ms);
     }else{
-    alerteLED_OFF();
+    alerteLED_reset();
+    etat =0;
     ThisThread::sleep_for(120ms);
 }
-}    
-
-
-
+}
+}
