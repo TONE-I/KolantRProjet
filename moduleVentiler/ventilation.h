@@ -1,5 +1,5 @@
-#ifndef VENTILATION.H
-#define VENTILATION.H
+#ifndef VENTILATION_H
+#define VENTILATION_H
 void OpenWin();//ouvre les fenetres gestion de servomoteur
 
 

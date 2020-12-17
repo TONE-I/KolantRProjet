@@ -1,10 +1,8 @@
 #include "mbed.h"
 #include "info.h"
 #include "Grove_LCD_RGB_Backlight.h"
-#include "LED_Bar.h"
 #define SLEEP_TIME 100ms // (msec)
 DigitalOut alerteLEDE(D3);
-LED_Bar bar(D8, D9);
 
 //alerteLED afficherLCD
 void alerteLED(){
