@@ -7,15 +7,15 @@
  */
 
 #include "mbed.h"
-
-#define SLEEP_TIME 200ms // (msec)
+#include "mesure.h"
+#define SLEEP_TIME 1000ms // (msec)
 DigitalOut led1(LED1);
-
+float CO2;
 int main() {
   while (true) {
-    printf("LO SNIR \r\n");
     led1 = !led1;
-
+    CO2=mesurerCO2();
+    printf("%f ppm\n\r",CO2);
     ThisThread::sleep_for(SLEEP_TIME);
   }
 }
