@@ -1,5 +1,5 @@
-#ifndef MESURE.H
-#define MESURE.H
+#ifndef MESURE_H
+#define MESURE_H
 
 float mesurerCO2();
 
