@@ -4,9 +4,8 @@
 BME280 capteur(I2C_SDA, I2C_SCL);
 MQ135 capteurO2(A0);
 
-float mesurerCO2(){
-float ppm;
-return ppm = capteurO2.getPPM();
+float mesurerCO2(){   
+return capteurO2.getPPM();
 }
 
 
