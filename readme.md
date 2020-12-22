@@ -25,6 +25,6 @@ contient les modules et les fichier permettent de gerer l'aeration d'une salle d
 **moduleInformer** : module contenant les fichier info.h et
 info.cpp permettant de gerer la communication via l'afficheure Grove LCD RGB Backlight
 
-**moduleMesurer** : module contenant les fichier mesure.h et mesure.cpp permettant de prendre les mesure d'O2 et de temperature
+**moduleMesurer** : module contenant les fichier mesure.h et mesure.cpp permettant de prendre les mesure de concentration CO2 et de temperature
 
 **moduleVentiler** : module contenant les fichier ventilation.h et ventilation.cpp permetant la gestion de servomoteur (ouvrir et fermer) 

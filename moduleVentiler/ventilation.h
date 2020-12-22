@@ -6,9 +6,21 @@
  */
 #ifndef VENTILATION_H
 #define VENTILATION_H
-void OpenWin();//ouvre les fenetres gestion de servomoteur
 
+/**
+ * @fn void OpenWin()
+ * @brief ouvre les fenetres (gestion de servomoteur)
+ * @param void
+ * @return void
+ */
+void OpenWin();
 
-void CloseWin();//ferme les fenetres gestion de servomoteur
+/**
+ * @fn void CloseWin()
+ * @brief ferme les fenetres (gestion de servomoteur)
+ * @param void
+ * @return void
+ */
+void CloseWin();
 
 #endif
