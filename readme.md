@@ -4,11 +4,11 @@
 - Microcontrôleur Mbed
 - Chaine de compilation croisée (i386 -> ARM)
 
-## Branche master
+## Branche projet
 
-Contient un squelette de projet à intégrer à VsCode
+contient les modules et les fichier permettent de gerer l'aeration d'une salle de classe 
 
-## Fichiers importants du projet template
+## Fichiers importants du projet MBED SN-AIR
 
 **.vscode/launch.json** : Configuration de la chaîne de développement (gcc-arm, JLink)
 
@@ -22,40 +22,9 @@ Contient un squelette de projet à intégrer à VsCode
 
 **STM32F7x6.svd** : Fichier de définition du microcontroleur. Permet une vision des registres de celui-ci.
 
-## QuickStart
+**moduleInformer** : module contenant les fichier info.h et
+info.cpp permettant de gerer la communication via l'afficheure Grove LCD RGB Backlight
 
-- Cloner le projet
+**moduleMesurer** : module contenant les fichier mesure.h et mesure.cpp permettant de prendre les mesure d'O2 et de temperature
 
-```shell
-git clone http://gogs.lyceekastler.fr/II_Mbed/Mbed6_Template_JLink.git <NOM_PROJET>
-```
-
-- Se déplacer dans le répertoire du projet
-
-```shell
-cd <NOM_PROJET>
-```
-
-- Mettre à jour mbed-os
-
-```shell
-mbed update
-```
-
-- Ouvrir le dossier dans VsCODE
-
-## Ressources Moodle
-
-### Installation MBED
-
-- [Installation Mbed et VSCode (Sous Ubuntu)](http://moodle.lyceekastler.fr/mod/page/view.php?id=1392)
-
-- [Installation MBED et VSCODE (sous Windows)](http://moodle.lyceekastler.fr/mod/page/view.php?id=1394)
-
-### Gestion de projets et documentation MBED
-
-- [Informatique embarquée avec MBED](http://moodle.lyceekastler.fr/course/view.php?id=112)
-
-- [Créer et gérer les projets mbed](http://moodle.lyceekastler.fr/mod/wiki/view.php?id=1021)
-
-- [Configurer et utiliser VSCode](http://moodle.lyceekastler.fr/mod/wiki/view.php?id=1022)
+**moduleVentiler** : module contenant les fichier ventilation.h et ventilation.cpp permetant la gestion de servomoteur (ouvrir et fermer) 
