@@ -1,9 +1,9 @@
 /* *
  * @file main.cpp
- * @brief Basic Mbed 6 template file for SNIR students
- * @author sepro
+ * @brief main code du projet SNI-AIR
+ * @author Carricart Léo 
  * @version 1.0
- * @date 04/11/2020
+ * @date 22/12/2020
  */
 
 #include "mbed.h"

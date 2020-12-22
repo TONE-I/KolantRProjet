@@ -1,3 +1,10 @@
+/* *
+ * @file info.cpp
+ * @brief code du module Informer
+ * @author Malta dylan
+ * @version 1.0
+ * @date 22/12/2020
+ */
 #include "mbed.h"
 #include "info.h"
 #include "Grove_LCD_RGB_Backlight.h"
