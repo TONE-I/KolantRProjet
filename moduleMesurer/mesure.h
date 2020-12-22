@@ -1,4 +1,4 @@
-/* *
+/**
  * @file   mesure.h
  * @author Dijoux Therry 
  * @version 1.0

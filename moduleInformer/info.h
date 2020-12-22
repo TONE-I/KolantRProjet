@@ -1,4 +1,4 @@
-/* *
+/**
  * @file info.h
  * @author Malta Dylan
  * @version 1.0

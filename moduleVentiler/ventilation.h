@@ -1,4 +1,4 @@
-/* *
+/**
  * @file   ventilation.h
  * @author Carricart Léo
  * @version 1.0

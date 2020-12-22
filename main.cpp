@@ -1,4 +1,4 @@
-/* *
+/**
  * @file main.cpp
  * @brief main code du projet SNI-AIR
  * @author Carricart Léo 

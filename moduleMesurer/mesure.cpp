@@ -1,5 +1,5 @@
 
-/* *
+/**
  * @file   mesure.cpp
  * @brief  code du module Mesurer
  * @author Dijoux Therry 

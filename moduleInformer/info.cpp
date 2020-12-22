@@ -1,4 +1,4 @@
-/* *
+/**
  * @file info.cpp
  * @brief code du module Informer
  * @author Malta dylan

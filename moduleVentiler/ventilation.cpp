@@ -1,5 +1,5 @@
 
-/* *
+/**
  * @file   ventilation.cpp
  * @brief  code du module Ventiler
  * @author Carricart Léo

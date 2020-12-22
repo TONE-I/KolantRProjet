@@ -1,6 +1,6 @@
 # Modele de projet 
 
-- Langage C
+- Langage C++
 - Microcontrôleur Mbed
 - Chaine de compilation croisée (i386 -> ARM)
 
@@ -28,3 +28,6 @@ info.cpp permettant de gerer la communication via l'afficheure Grove LCD RGB Bac
 **moduleMesurer** : module contenant les fichier mesure.h et mesure.cpp permettant de prendre les mesure de concentration CO2 et de temperature
 
 **moduleVentiler** : module contenant les fichier ventilation.h et ventilation.cpp permetant la gestion de servomoteur (ouvrir et fermer) 
+
+## Documentation doxygen
+**index.html**
