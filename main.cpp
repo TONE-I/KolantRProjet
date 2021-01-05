@@ -1,9 +1,9 @@
 /**
  * @file main.cpp
- * @brief Basic template file for SNIR students
- * @author sepro
+ * @brief Mise en oeuvre tft adafruit 320*240 
+ * @author patrice Speziali
  * @version 1.0
- * @date 21/10/2019
+ * @date 21/10/2020
  * @ressources  
  *  - 
  */
@@ -17,16 +17,7 @@
 #include "Arial28x28.h"
 #include "font_big.h"
 
-//#define PIN_MOSI        PTD2
-//#define PIN_MISO        PTD3 
-//#define PIN_SCLK        PTD1 
-//#define PIN_CS_TFT      PTD0 
-//#define PIN_DC_TFT      PTD5 
-// #define PIN_BL_TFT      PTC9 
-// #define PIN_CS_SD       PTA4 
 
-// #define PIN_CS_TSC      PTA13
-// #define PIN_TSC_INTR    PTC9
 
 //affectation des broches pour la comunication spi
 PinName Mosi = PE_14 ; //SPI4_MOSI; // bleu
