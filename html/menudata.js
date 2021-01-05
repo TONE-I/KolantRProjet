@@ -21,14 +21,14 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"Page principale",url:"index.html"},
-{text:"Pages associées",url:"pages.html"},
-{text:"Espaces de nommage",url:"namespaces.html",children:[
-{text:"Liste des espaces de nommage",url:"namespaces.html"}]},
-{text:"Fichiers",url:"files.html",children:[
-{text:"Liste des fichiers",url:"files.html"},
-{text:"Membres de fichier",url:"globals.html",children:[
-{text:"Tout",url:"globals.html",children:[
+{text:"Main Page",url:"index.html"},
+{text:"Related Pages",url:"pages.html"},
+{text:"Namespaces",url:"namespaces.html",children:[
+{text:"Namespace List",url:"namespaces.html"}]},
+{text:"Files",url:"files.html",children:[
+{text:"File List",url:"files.html"},
+{text:"Globals",url:"globals.html",children:[
+{text:"All",url:"globals.html",children:[
 {text:"_",url:"globals.html#index__5F"},
 {text:"a",url:"globals_a.html#index_a"},
 {text:"c",url:"globals_c.html#index_c"},
@@ -39,7 +39,7 @@ var menudata={children:[
 {text:"p",url:"globals_p.html#index_p"},
 {text:"s",url:"globals_s.html#index_s"},
 {text:"u",url:"globals_u.html#index_u"}]},
-{text:"Fonctions",url:"globals_func.html"},
+{text:"Functions",url:"globals_func.html"},
 {text:"Macros",url:"globals_defs.html",children:[
 {text:"_",url:"globals_defs.html#index__5F"},
 {text:"c",url:"globals_defs_c.html#index_c"},

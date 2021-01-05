@@ -1,8 +1,8 @@
 var indexSectionsWithContent =
 {
-  0: "_acdilmnoprsuv",
+  0: "_acilmnoprsuv",
   1: "m",
-  2: "dimrsv",
+  2: "imrsv",
   3: "aclmos",
   4: "_clmnpsu",
   5: "m"
@@ -20,10 +20,10 @@ var indexSectionNames =
 
 var indexSectionLabels =
 {
-  0: "Tout",
-  1: "Espaces de nommage",
-  2: "Fichiers",
-  3: "Fonctions",
+  0: "All",
+  1: "Namespaces",
+  2: "Files",
+  3: "Functions",
   4: "Macros",
   5: "Pages"
 };
