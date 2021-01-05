@@ -22,12 +22,12 @@ float temp;
   {
     ppm = mesurerCO2();
     temp = mesurerTemp();
-    if(ppm > 700.0 && temp > 21.0){
+    if(ppm > 700.0 || temp > 25.0){
         OpenWin();
         alerteLED();
         afficherLCD(temp,ppm);
     }
-    else if(temp < 21.0 || ppm < 700.0){
+    else if(temp < 25.0 || ppm < 700.0){
         CloseWin();
         alerteLED_reset();
         afficherLCD(temp,ppm);
