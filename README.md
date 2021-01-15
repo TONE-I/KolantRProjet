@@ -1,10 +1,10 @@
-# Ecran adafruit TFT 320x240
+﻿# Ecran adafruit TFT 320x240
 
 ## Cablage (wiring)
 
 #### Schema (Raspberry)
 
-#### ![rasppin.png](Image/!rasppin.png)
+#### ![rasppin.png](Image/rasppin.png)
 
 ![stm32Pin.png](Images/stm32Pin.png?fileId=1212594#mimetype=image%2Fpng&hasPreview=true)
 
