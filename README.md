@@ -4,7 +4,7 @@
 
 #### Schema (Raspberry)
 
-#### ![rasppin.png](Images/rasppin.png?fileId=1212325#mimetype=image%2Fpng&hasPreview=true)Schema (nucleo f746zg)
+#### ![rasppin.png](Image/!rasppin.png)
 
 ![stm32Pin.png](Images/stm32Pin.png?fileId=1212594#mimetype=image%2Fpng&hasPreview=true)
 
