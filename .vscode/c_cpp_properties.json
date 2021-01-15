@@ -6,7 +6,7 @@
             ],
             "intelliSenseMode": "gcc-x64",
             "name": "Windows",
-            "compilerPath": "arm-none-eabi-g++",
+            "compilerPath": "/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gdb",
             "includePath": [
                 "${workspaceFolder}/*",
                 "${workspaceFolder}/SPI_STMPE610/*",

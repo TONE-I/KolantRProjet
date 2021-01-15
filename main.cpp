@@ -80,7 +80,7 @@ int main()
     TFT.set_font((unsigned char*) Arial12x12);
     TFT.foreground(Blue) ;
     TFT.locate(60, 10) ;
-    TFT.printf("<< TS Eyes >>") ;
+    TFT.printf("<< kolantr >>") ;
     TFT.locate(30, 280) ;
     TFT.printf("Use FRDM touch slider") ;
     TFT.locate(30, 300) ;
