@@ -1,30 +1,31 @@
 #ifndef CVehicule_H
 #define CVehicule_H
+#include <iostream>
 
 using namespace std;
-#include <vector.h>
+#include <vector>
 #include "CEnumVehicule.h"
 
 class CVehicule
 {
     public:
-    CVehicule(CEnumVehicule typeV, unsigned char vitesse, unsigned int nbreRepet, float fz);
+    CVehicule(/** CEnumVehicule typeV, **/ unsigned char vitesse, unsigned int nbreRepet, float frequence);
     CVehicule();
-    float get_fz();
-    void set_fz(_fz);
+    float get_frequence();
+    void set_frequence(float frequence);
     int get_vitesse();
-    void set_vitesse(_vitesse);
+    void set_vitesse(int vitesse);
     CEnumVehicule get_typeVehicule();
-    void set_typeVehicule(_typeVehicule);
-    vect<float> get_empattement();
-    void set_empattement(vect<float> empattement);
-
+    void set_typeVehicule(CEnumVehicule typeVehicule);
+    vector<float> get_empattement();
+    void set_empattement(vector<float> empattement);
+    void afficherParam();
 
     private:
-    float _fz;
+    float _frequence;
     int _vitesse;
     unsigned int _nbreSimulation;
     CEnumVehicule _typeVehicule;
-    vect<float> _empattement;
-}
+    vector<float> _empattement;
+};
 #endif /* CVehicule */

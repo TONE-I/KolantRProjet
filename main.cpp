@@ -16,7 +16,7 @@
 #include "Arial24x23.h"
 #include "Arial28x28.h"
 #include "font_big.h"
-
+#include "CVehicule.h"
 
 
 //affectation des broches pour la comunication spi
@@ -49,52 +49,8 @@ int bp = 0;
 int main()
 
 {
-    ledR = true ;
-    ledB = false ;
-    ledV = false ;
-
-
-    //Configure the display driver
-    TFT.background(Blue);
-    TFT.foreground(White);
-    //wait(0.01) ;
-    ThisThread::sleep_for(100);
-    TFT.cls();
-    ledR = false ;
-
-    TFT.set_font((unsigned char*) Arial12x12);
-    TFT.foreground(Black) ;
-    TFT.locate(65, 10) ;
-    TFT.printf("KolantR 2021") ;
-    
-    ledB = true ;
-    int dx, px ;
-    float delta = 0.0 ;
-    dx = 0 ;
-    px = 0 ;
-  //  backlight = 0 ;
-    TFT.background(Blue);
-    wait(0.1) ;
-    TFT.foreground(White);
-    wait(0.1) ;
-    TFT.cls() ;
-    wait(0.1) ;
-
-    TFT.set_font((unsigned char*) Arial24x23);
-    TFT.foreground(Black) ;
-    TFT.locate(45, 10) ;
-    TFT.printf(" KolantR") ;
-    TFT.foreground(Black) ;
-    TFT.locate(25, 40) ;
-    TFT.printf(" Simulation") ;
-      TFT.set_font((unsigned char*) Arial24x23);
-    TFT.foreground(White) ;
-    TFT.locate(55, 90) ;
-    TFT.printf("Option") ;
-    TFT.locate(30, 150) ;
-    TFT.set_font((unsigned char*) Arial12x12);
-    TFT.printf(" 1 - Simulation Locale") ;
-    TFT.locate(30, 250) ;
-    TFT.printf(" 2 - Recevoir un Scenario") ;
+  CVehicule::CVehicule 1000tipla;
+  1000tipla set_vitesse(60);
+  
 
 }
