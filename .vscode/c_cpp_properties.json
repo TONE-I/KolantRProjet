@@ -553,11 +553,6 @@
                 "${workspaceFolder}/mbed-os/features/netsocket/cellular/*",
                 "${workspaceFolder}/mbed-os/features/netsocket/emac-drivers/TARGET_STM_EMAC/*",
                 "${workspaceFolder}/mbed-os/features/netsocket/emac-drivers/TARGET_STM_EMAC/TARGET_STM32F7/*",
-                "${workspaceFolder}/mbed-os/features/netsocket/ppp/*",
-                "${workspaceFolder}/mbed-os/features/netsocket/ppp/include/*",
-                "${workspaceFolder}/mbed-os/features/netsocket/ppp/include/polarssl/*",
-                "${workspaceFolder}/mbed-os/features/nfc/*",
-                "${workspaceFolder}/mbed-os/features/nfc/acore/*",
                 "${workspaceFolder}/mbed-os/features/nfc/acore/acore/*",
                 "${workspaceFolder}/mbed-os/features/nfc/controllers/*",
                 "${workspaceFolder}/mbed-os/features/nfc/nfc/*",
@@ -619,7 +614,7 @@
                 "/home/seb/seafile/Seafile/SNIR/Module_II/5-ProjetsMbed/F746/Mbed-snir-template/mbed-os/*"
             ],
             "name": "Mac",
-            "compilerPath": "arm-none-eabi-g++",
+            "compilerPath": "/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gdb",
             "defines": [
                 "DEVICE_SPI=1",
                 "TARGET_STM32F746xG",
@@ -967,7 +962,7 @@
                 "/home/seb/seafile/Seafile/SNIR/Module_II/5-ProjetsMbed/F746/Mbed-snir-template/mbed-os/*"
             ],
             "name": "Linux",
-            "compilerPath": "arm-none-eabi-g++",
+            "compilerPath": "/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gdb",
             "defines": [
                 "DEVICE_SPI=1",
                 "TARGET_STM32F746xG",

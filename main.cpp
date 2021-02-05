@@ -43,8 +43,11 @@ SPI_STMPE610 TSC(Mosi, Miso, Sclk, CS_TSC) ;
 DigitalOut ledV(LED1);
 DigitalOut ledB(LED2);
 DigitalOut ledR(LED3);
+DigitalIn bouton(USER_BUTTON);
+int bp = 0;
 
 int main()
+
 {
     ledR = true ;
     ledB = false ;
@@ -52,17 +55,17 @@ int main()
 
 
     //Configure the display driver
-    TFT.background(Black);
+    TFT.background(Blue);
     TFT.foreground(White);
     //wait(0.01) ;
-    ThisThread::sleep_for(100);;
+    ThisThread::sleep_for(100);
     TFT.cls();
     ledR = false ;
 
     TFT.set_font((unsigned char*) Arial12x12);
-    TFT.foreground(Blue) ;
-    TFT.locate(60, 10) ;
-    TFT.printf("SART 2021") ;
+    TFT.foreground(Black) ;
+    TFT.locate(65, 10) ;
+    TFT.printf("KolantR 2021") ;
     
     ledB = true ;
     int dx, px ;
@@ -70,42 +73,28 @@ int main()
     dx = 0 ;
     px = 0 ;
   //  backlight = 0 ;
-    TFT.background(Black);
+    TFT.background(Blue);
     wait(0.1) ;
     TFT.foreground(White);
     wait(0.1) ;
     TFT.cls() ;
     wait(0.1) ;
 
+    TFT.set_font((unsigned char*) Arial24x23);
+    TFT.foreground(Black) ;
+    TFT.locate(45, 10) ;
+    TFT.printf(" KolantR") ;
+    TFT.foreground(Black) ;
+    TFT.locate(25, 40) ;
+    TFT.printf(" Simulation") ;
+      TFT.set_font((unsigned char*) Arial24x23);
+    TFT.foreground(White) ;
+    TFT.locate(55, 90) ;
+    TFT.printf("Option") ;
+    TFT.locate(30, 150) ;
     TFT.set_font((unsigned char*) Arial12x12);
-    TFT.foreground(Blue) ;
-    TFT.locate(60, 10) ;
-    TFT.printf("<< kolantr >>") ;
-    TFT.locate(30, 280) ;
-    TFT.printf("Use FRDM touch slider") ;
-    TFT.locate(30, 300) ;
-    TFT.printf("Touch right edge to end") ;
-    
-    TFT.fillcircle(120, 160, 100, Green) ;
-    TFT.fillcircle(60, 160, 50, Black) ;
-    TFT.fillcircle(60, 160, 45, White) ;
-    TFT.fillcircle(180, 160, 50, Black) ;
-    TFT.fillcircle(180, 160, 45, White) ;
-    TFT.fillcircle(60, 160, 5, Black) ;
-    TFT.fillcircle(180, 160, 5, Black) ;
+    TFT.printf(" 1 - Simulation Locale") ;
+    TFT.locate(30, 250) ;
+    TFT.printf(" 2 - Recevoir un Scenario") ;
 
-    int touched = 0 ;
-    uint16_t x=0, y=0, z=0 ;
-    while (true) {
-        //printf("LO SNIR \r\n");
-        //ledV = !ledV;
-        touched = TSC.getRAWPoint(&x, &y, &z) ;
-        if (touched) {
-
-            printf("x = %d, y = %d, z = %d\n\r", x, y, z) ;
-            ledB = !ledB ;
-        }
-        ThisThread::sleep_for(SLEEP_TIME);
-        //ledB = !ledB ;
-    }
 }
