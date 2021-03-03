@@ -39,18 +39,15 @@ DigitalOut doBackLightTFT (backLightTFT, 1);
 SPI_TFT_ILI9341 TFT(Mosi, Miso, Sclk, CsTFT, RstTFT, DcTFT) ;
 SPI_STMPE610 TSC(Mosi, Miso, Sclk, CS_TSC) ;
 
-#define SLEEP_TIME                  1000 // (msec)
-DigitalOut ledV(LED1);
-DigitalOut ledB(LED2);
-DigitalOut ledR(LED3);
-DigitalIn bouton(USER_BUTTON);
-int bp = 0;
+#define SLEEP_TIME                  1500 // (msec)
+DigitalOut led1(LED3);
+DigitalOut led2(LED2);
+DigitalIn bp(USER_BUTTON);
 
 int main()
-
 {
-  CVehicule::CVehicule 1000tipla;
-  1000tipla set_vitesse(60);
-  
-
+    CVehicule Milletipla;
+    Milletipla.set_vitesse(135);
+    Milletipla.set_frequence(0.05);
+    Milletipla.afficherParam();
 }
