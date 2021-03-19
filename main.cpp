@@ -7,38 +7,39 @@
  */
 
 #include "mbed.h"
-#include "info.h"
-#include "mesure.h"
-#include "ventilation.h"
 
-#define SLEEP_TIME 200ms // (msec)
+DigitalOut Sortie1 = D0;
+DigitalOut Sortie2 = D1;
 
+//pour 130 km/h et empattement de 3 metres, laisser la boucle pour la distance inter vehicule pour les oscillos
 int main() {
+int b = 1;
+while(b == 1){
 
-float ppm; 
-float temp; 
+  Sortie1 = 1;
+  Sortie2 = 0;
 
- while (true)
-  {
-    ppm = mesurerCO2();
-    temp = mesurerTemp();
-    if(ppm > 700.0 || temp > 25.0){
-        OpenWin();
-        alerteLED();
-        afficherLCD(temp,ppm);
-    }
-    else if(temp < 25.0 || ppm < 700.0){
-        CloseWin();
-        alerteLED_reset();
-        afficherLCD(temp,ppm);
-    }
-
-
-    else{
-        afficherLCD(temp,ppm);
-        alerteLED_reset();
-    }
-    alerteLED_reset();
-  }
+  wait_us(2700);
+  Sortie1 = 0;
+  wait_us((27700-2700));
+  Sortie2 = 1;
+  wait_us(2700);
+  Sortie2 = 0;
+  //empatement du vehicule = 3 metres
+  wait_us(41500);
+  wait_us(41500);
+  Sortie1 = 1;
+  wait_us(2700);
+  Sortie1 = 0;
+  wait_us((27700-2700));
+  Sortie2 = 1;
+  wait_us(2700);
+  Sortie2 = 0;
+  wait_us(41500);
+  wait_us(41500);
+  wait_us(41500);
+  wait_us(41500);
+  
+}
 }
   
