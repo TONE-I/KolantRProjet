@@ -23,12 +23,14 @@ int main()
     printf("debut prog\r\n");
     vitesse = 130;
     rapport = vitesse / timeP;
-    printf("un metre est parcouru en %lf \n\r", rapport);
+    printf("vitesse en m/ms %lf \n\r", rapport);
     double tps1m = 1/rapport;
     printf("le temps pour parcourir un metre est: %lf ms \n\r", tps1m); 
     double tpsT = 0.01*tps1m;
     printf("temps de passage sur tuyau = %lf ms\n\r", tpsT);
     double tpsEmpattement = empattement*tps1m;
     printf("temps mesuré pour l'empattement = %lf ms\n\r", tpsEmpattement);
+    int temps = static_cast<int>(tpsEmpattement);
+    printf("temps en int = %d\n\r", temps);
 
 }
