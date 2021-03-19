@@ -11,28 +11,29 @@
 
 using namespace std;
 #include <vector>
-#include <CVehicule.h>
+//#include <CVehicule.h>
+#include "CEnumVehicule.h"
 class CVehicule
 {
-    public:
+public:
     CVehicule();
-    CVehicule(/** CEnumVehicule typeV, **/ unsigned char vitesse, unsigned int nbreRepet, float frequence);
+    CVehicule(CEnumVehicule typeVehicule, unsigned char vitesse, unsigned int nbreRepet, float frequence);
     ~CVehicule();
     float get_frequence();
     void set_frequence(float frequence);
     int get_vitesse();
     void set_vitesse(int vitesse);
-    //CEnumVehicule get_typeVehicule();
-    //void set_typeVehicule(CEnumVehicule typeVehicule);
+    CEnumVehicule get_typeVehicule();
+    void set_typeVehicule(CEnumVehicule typeVehicule);
     vector<float> get_empattement();
     void set_empattement(vector<float> empattement);
     void afficherParam();
 
-    private:
-    float _frequence;
+private:
     int _vitesse;
     unsigned int _nbreRepet;
-    //CEnumVehicule _typeVehicule;
+    CEnumVehicule _typeVehicule;
+    float _frequence;
     vector<float> _empattement;
 };
 #endif /* CVehicule */

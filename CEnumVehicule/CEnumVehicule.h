@@ -3,14 +3,11 @@
 #include <iostream>
 
 using namespace std;
-#include <vector>
 
-class CEnumVehicule
+enum class CEnumVehicule
 {
-    public:
-    vector<string> type(2);
-    
-}
-
+    VL,
+    PL
+};
 
 #endif /* CEnumVehicule */
