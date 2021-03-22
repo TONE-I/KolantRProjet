@@ -1,9 +1,9 @@
 /**
  * @file main.cpp
- * @brief main code du projet SNI-AIR
- * @author Carricart Léo 
+ * @brief main code Temporaire simulation materielle
+ * @author Testa Tony
  * @version 1.0
- * @date 22/12/2020
+ * @date 22/03/2021
  */
 
 #include "mbed.h"
