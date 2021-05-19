@@ -8,16 +8,16 @@
 #ifndef CVehicule_H
 #define CVehicule_H
 #include <iostream>
+#include "CEnumVehicule.h"
 
 using namespace std;
 #include <vector>
 //#include <CVehicule.h>
-#include "CEnumVehicule.h"
 class CVehicule
 {
 public:
     CVehicule();
-    CVehicule(CEnumVehicule typeVehicule, unsigned char vitesse, unsigned int nbreRepet, float frequence);
+    CVehicule(CEnumVehicule typeVehicule, int vitesse, unsigned int nbreRepet, float frequence, double empattement);//, double empattement);
     ~CVehicule();
     float get_frequence();
     void set_frequence(float frequence);
@@ -25,8 +25,8 @@ public:
     void set_vitesse(int vitesse);
     CEnumVehicule get_typeVehicule();
     void set_typeVehicule(CEnumVehicule typeVehicule);
-    vector<float> get_empattement();
-    void set_empattement(vector<float> empattement);
+    double get_empattement();
+    void set_empattement(double empattement);
     void afficherParam();
 
 private:
@@ -34,6 +34,6 @@ private:
     unsigned int _nbreRepet;
     CEnumVehicule _typeVehicule;
     float _frequence;
-    vector<float> _empattement;
+   double _empattement;
 };
 #endif /* CVehicule */

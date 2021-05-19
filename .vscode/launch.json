@@ -7,7 +7,7 @@
             "name": "Debug J-Link",
             "cwd": "${workspaceRoot}",
             "executable": "${workspaceRoot}/BUILD/NUCLEO_F746ZG/GCC_ARM-DEBUG/${workspaceRootFolderName}.elf",
-            "serverpath": "/opt/SEGGER/JLink/JLinkGDBServerCLExe", 
+            "serverpath": "/opt/SEGGER/JLink_V680c/JLinkGDBServerCLExe",
             "servertype": "jlink",
             "device": "STM32F746ZG",
             "interface": "swd",

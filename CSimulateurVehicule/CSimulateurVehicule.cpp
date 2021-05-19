@@ -1,33 +1,34 @@
-#include "CVehicule.h"
-#include "CConfig.h"
-#include "CEnumSimulation.h"
-#include "CEnumVehicule.h"
-#include <iostream>
-using namespace std;
-
-CSimulateurVehicule::CSimulateurVehicule(CConfig config){
-    printf("Simulation créée\r\n");
-}
-CSimulateurVehicule::~CSimulateurVehicule(){
-
-}
-
-CSimulateurVehicule::chargerScenario(){
-
-}
-
-CSimulateurVehicule::lancerScenario(){
-
-}
-
-CSimulateurVehicule::simulerPL(){
-
-}
-
-CSimulateurVehicule::simulerVL(){
-
-}
-
-CSimulateurVehicule::stopperSimulation(){
-    
-}
+//#include "CSimulateurVehicule.h"
+//#include "CVehicule.h"
+//#include "mbed.h"
+//#include "CConfig.h"
+//#include "CEnumSimulation.h"
+//#include "CEnumVehicule.h"
+//#include <stdio.h>
+//#include <iostream>
+//#include <stdlib.h>
+//#include <string.h>
+//#include "./tiny-json.h"
+//using namespace std;
+//#define MAXIMUM_BUFFER_SIZE                                                  1024
+//static DigitalOut led(LED1);
+//DigitalOut Tube1 = D0;
+//DigitalOut Tube2 = D1;
+//static BufferedSerial serial_port(D1, D0);
+//
+//
+//
+//void CSimulateurVehicule::CSimulateurVehicule(CConfig config){
+//   
+//}
+//void CSimulateurVehicule::~CSimulateurVehicule(){
+//
+//}
+//
+//void CSimulateurVehicule::chargerScenario(){   
+//    }
+//
+//
+//void CSimulateurVehicule::lancerScenario(){
+//    
+//}

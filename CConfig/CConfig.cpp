@@ -6,6 +6,7 @@
 using namespace std;
 
 CConfig::CConfig() : _VL(), _PL(), _typeSimulation(CEnumSimulation::pressostat1), _limitationVitesse(30), pinPressostat1(PB_8), pinPressostat2(PB_9)
+
 {
 }
 
