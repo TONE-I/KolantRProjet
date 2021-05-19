@@ -10,16 +10,16 @@
 
 #include "mbed.h"
 // Ajout pour gestion afficheur
-//#include "SPI_STMPE610.h"
-//#include "SPI_TFT_ILI9341.h"
-////#include "Arial12x12.h"
-////#include "Arial24x23.h"
-////#include "Arial28x28.h"
-////#include "font_big.h"
-//#include "CVehicule.h"
-//#include "CEnumVehicule.h"
-//#include "CConfig.h"
-//#include "CEnumSimulation.h"
+#include "SPI_STMPE610.h"
+#include "SPI_TFT_ILI9341.h"
+#include "Arial12x12.h"
+#include "Arial24x23.h"
+#include "Arial28x28.h"
+#include "font_big.h"
+#include "CVehicule.h"
+#include "CEnumVehicule.h"
+#include "CConfig.h"
+#include "CEnumSimulation.h"
 //#include <stdlib.h>
 //#include <string.h>
 //#include "./tiny-json.h"
@@ -51,34 +51,32 @@
 //
 int main()
 {
-   // CVehicule multipla;
-   // CConfig Sim;
-   // multipla.set_vitesse(50);
-   //// multipla.set_empattement(2.44);
-  ////  if (multipla.get_empattement()>3.45){
-  ////          multipla.set_typeVehicule(CEnumVehicule::PL);
-////
-  ////  }
-  ////  else{
-  ////          multipla.set_typeVehicule(CEnumVehicule::VL);
-////
-  ////  }
-   // multipla.set_frequence(0.05);
-   // Sim.setPinPressostat1(PB_8);
-   // Sim.setPinPressostat2(PB_9);
-   // Sim.setTypeSimulation(CEnumSimulation::pressostat2);
-   // Sim.set_limitationVitese(30); //Milletipla.set_type()
-   // multipla.afficherParam();
-   // Sim.afficherParam();
-   // if (multipla.get_vitesse() > Sim.get_limitationVitesse())
-   // {
-   //     printf("Le vehicule est en exces de vitesse\r\n");
-   // }
-   // else
-   // {
-   //     printf("Le vehicule roule a la bonne vitesse\r\n");
-   // }
+   CVehicule multipla;
+   CConfig Sim;
+   multipla.set_vitesse(50);
+   multipla.set_empattement(2.44);
+   if (multipla.get_empattement()>3.45){
+           multipla.set_typeVehicule(CEnumVehicule::PL);
+   }
+   else{
+           multipla.set_typeVehicule(CEnumVehicule::VL);
+   }
+    multipla.set_frequence(0.05);
+    Sim.setPinPressostat1(PB_8);
+    Sim.setPinPressostat2(PB_9);
+    Sim.setTypeSimulation(CEnumSimulation::pressostat2);
+    Sim.set_limitationVitese(30); //Milletipla.set_type()
+    multipla.afficherParam();
+    Sim.afficherParam();
+    if (multipla.get_vitesse() > Sim.get_limitationVitesse())
+    {
+        printf("Le vehicule est en exces de vitesse\r\n");
+    }
+    else
+    {
+        printf("Le vehicule roule a la bonne vitesse\r\n");
+    }
     //CSimulateurVehicule::simulerVL();
-    printf("hello");
+   
 
 }
